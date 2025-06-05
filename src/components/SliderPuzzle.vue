@@ -176,23 +176,29 @@ export default {
   flex-wrap: wrap;
   margin: auto;
   margin-bottom: 60px;
+  padding: 0;
+  gap: 0;
 }
 .column {
-  flex-grow: 1;
-  width: 33%;
+  width: 33.3333%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
 }
 .column img {
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+
 }
 @media (max-width: 768px) {
-  .row[data-v-4a1f852f] {
-    display: flex;
-    max-width: 90vw;
-    max-height: 90vh;
-    flex-wrap: wrap;
-    margin: auto;
-    margin-bottom: 60px;
-  }
+.row{
+  max-width: 90vw;
+  max-height: 90vh;
+}
 }
 </style>
